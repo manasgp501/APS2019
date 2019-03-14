@@ -1,0 +1,15 @@
+Array Query Problem
+1) Lookup table Technique
+    Space Complexity : O(n^2)
+    Time Complexity : O(n^2)
+    Created by taking min. no. b/w two indices.
+    Useful in the case when there are more no. of queries.
+2) Square Root Decomposition
+    Divide the array in sqrt(n) blocks.
+    Technique is calculating the min. in blockas and using it for query.
+    Space Complexity : O(n)
+    Time Complexity : sqrt(n)
+3) Segment Tree
+    Created by dividing the array into two halves and storing the halves sum in node until we get the array lements at node.
+    Time Complexity : O(log(n))
+    Used whn size of data and data is static.
