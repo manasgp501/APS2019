@@ -1,0 +1,11 @@
+Binomial Coefficient
+Binomial Coefficient is used to fint the coefficient with a given n and k. There are 3 ways, all having time complexity ofO(n*k).
+1) Recursive Version
+   C(n,k)=C(n-1,k-1)+C(n-1,k)
+   The memory occupied is 2^(n-1)*(memory required for last recursive call).
+   Best ehen there is only one single query.
+2) 1-D Dynamic Version
+   The size occupied is less compared to Recursive Version as same set copy isn't created everytime.
+   Uses values from previous row of Pascal's triangle and best when we need to generate Binomial Coefficients for a row.
+3) 2-D Dynamic Version
+   Best when multiple queries are to be made.
